@@ -1,8 +1,8 @@
-pipeline{
- agent any
+pipeline {
+    agent any
 
-    stages{
-         stage('Clone Repository') {
+    stages {
+        stage('Clone Repository') {
             steps {
                 git 'https://github.com/ShashankSrivatsaRao/Jenkins_Test.git'
             }
@@ -19,3 +19,4 @@ pipeline{
         }
     }
 }
+
